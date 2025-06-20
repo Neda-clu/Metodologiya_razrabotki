@@ -12,4 +12,12 @@ public class PhoneBookTest {
         Assertions.assertEquals(expected,result);
 
     }
+    @Test
+    void test_findByNumber(){
+        PhoneBook bookki=new PhoneBook();
+        int number=8970;
+        String expected="Asiri";
+        String result= bookki.findByNumber(number);
+        Assertions.assertEquals(expected,result);
+    }
 }
