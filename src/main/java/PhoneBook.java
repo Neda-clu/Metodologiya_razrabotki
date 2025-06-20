@@ -12,7 +12,7 @@ public class PhoneBook {
         return numbers.size();}
 
     public String findByNumber(int number){
-        return null;
+        return numbers.get(number);
 
     }
 
