@@ -1,8 +1,4 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.*;
 
 public class PhoneBook {
     private Map<String,Integer> names= new HashMap<>();
@@ -20,7 +16,7 @@ public class PhoneBook {
         return names.get(name);
     }
 
-    public List<String> printAllNames(){
-        return null;
+    public HashSet<String> printAllNames(){
+        return new HashSet<>(names.keySet());
     }
 }

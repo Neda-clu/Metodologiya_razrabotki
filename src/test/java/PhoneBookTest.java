@@ -36,8 +36,14 @@ public class PhoneBookTest {
     @Test
     void test_printAllNames(){
         PhoneBook bookki=new PhoneBook();
-        List<String> result=bookki.printAllNames();
-        List<String> expected= List.of(new String[]{"Asiri", "Gera", "Lulu"});
+        bookki.add("Asiri",8990);
+        bookki.add("Lulu",1122);
+        bookki.add("Gera",3245);
+        HashSet<String> result=bookki.printAllNames();
+        HashSet<String> expected=new HashSet<>();
+        expected.add("Lulu");
+        expected.add("Asiri");
+        expected.add("Gera");
         Assertions.assertEquals(expected,result);
     }
 }
