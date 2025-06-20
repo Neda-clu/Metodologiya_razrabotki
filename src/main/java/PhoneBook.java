@@ -15,5 +15,8 @@ public class PhoneBook {
         return numbers.get(number);
 
     }
+    public int findByName(String name){
+        return 0;
+    }
 
 }
